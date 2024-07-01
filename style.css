@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:font-colors{
+    --primary-text-color :#2F323A;
+    --secondary-text-color :#77567A;
+    --accent-color:#C47AC0;
+    --accent-color-darker:#6656C7;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--primary-text-color);
+}
+p{
+    font-family: "roboto",sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.5rem;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.flex{
+    display:flex;
+    align-items:center;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav{
+    background-color: rgb(125, 206, 208);
+    box-shadow: #2F323A;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 6px;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+.nav-links ul{
+    gap: 140px;
+}
+.nav-items:hover{
+    cursor: pointer;
+    color:var(--secondary-text-color)
+}
+.nav-items:active{
+    color: bisque;
+}
+.search-bar{
+    height: 32px;
+    gap: 8px;
+}
+.news-input{
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    /*border:2px solid black;*/
+    border:none;
+}
+.search-button{
+    background-color:rgb(14, 164, 169, 0.7) ;
+    /*color: aliceblue;*/
+    padding:8px 24px;
+    border:2px solid #c8d7f2;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.search-button:active{
+    background-color: rgb(236, 236, 188);
+}
+.nav-items.active{
+    color:rgb(8, 118, 121) ;
+}
+main{
+    padding-block: 20px;
+    margin-top: 120px;
+}
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #C47AC0;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: aliceblue;
+    overflow: hidden;
+    transition: all 0.3sec ease ;
+}
+.card:hover{
+    box-shadow: 1px 1px 8px #6656C7;
+    background-color: azure;
+    transform: translateY(-2px);
+}
+.card-header img{
+    width:100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 12px;
+}
+.source{
+    margin-block: 8px;
+    
+}
